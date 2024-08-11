@@ -1,0 +1,123 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+        &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $color_7;
+      }
+    }
+
+
+.header-body {
+    background-image: url(../img/work_normal.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+            }
+
+.navigation-wrap {
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    }
+
+.logo-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+                  }
+
+.menu {
+    
+ .nav-list {
+    width: 670px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0 -15px;
+
+         .nav-list-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 15px;
+    width: 134px;
+    padding: 15px 10px;
+     
+      .nav-link { 
+        text-transform: uppercase;
+    font-family: $font_1;
+    font-size: $fs6;
+    font-weight: 600;
+    color: $color_1;
+      }
+    }
+  }
+}
+
+.main-content {
+    margin-top: 100px;
+         h1 {
+    font: $font_1;
+    font-size: $fs1;
+    color: $color_1;
+    text-align: center;
+    width: 1170px;
+    margin: 0 auto 60px;
+ }
+
+      .text p {
+    color: $color_1;
+    font-family: $font_1;
+    font-size: $fs4;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto 80px;
+    width: 1170px;
+    }
+      .btn-header {
+    display: block; 
+    margin: auto;   
+    width: 370px;
+    padding: 20px;
+    background-color: $color_4;
+        cursor: pointer;
+           .btn {
+            color: $color_1;
+            font-family: $font_1;
+            font-weight: 900;
+            text-align: center;
+           }
+         }
+}
+
+.btn-header:hover{
+    background-color: $color_8;
+    filter: contrast(100%);
+    font-size: $fs2;
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
+   } 
+
+.btn-header:active {
+        filter: drop-shadow(0 0 3px rgba(80, 2, 2, 0.129));
+        transform: rotate(40deg);
+        transition-duration: 0.8s;
+                     }
+
+                  
