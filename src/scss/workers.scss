@@ -1,0 +1,58 @@
+.workers {
+    background-color: $color_1;
+    padding: 200px 150px;
+}
+.workers-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.workers-wrap-card {
+    width: 270px;
+    border-radius: 1px solid $color_9;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.img-workers {
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    margin-bottom: 15px;
+     .img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+     }
+}
+.worker {
+    font-family: $font_1;
+    font-weight: 700;
+    color: $color_2;
+    font-size: $fs4;
+    span {
+        font-size: $fs5;
+        color: $color_4;
+        font-weight: 400;
+    }
+}
+
+.workers-card-text {
+    font-family: $font_1;
+    font-size: $fs5;
+    font-weight: 400;
+    }
+.workers-icons { display: ;
+}
+.workers-icons-item {
+}
+.fa-brands {
+}
+.fa-facebook-f {
+}
+.fa-twitter {
+}
+.fa-linkedin {
+}
