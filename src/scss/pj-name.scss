@@ -1,7 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 2px;
 }
 .grid-item {
@@ -9,6 +9,7 @@
     background-color: $color_1;
     width: 379px;
     height: 340px;
+    cursor: pointer;
 }
 .grid-item-1 {
 background-image:url(../img/grid.png);
