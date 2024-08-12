@@ -1,1 +1,45 @@
+@mixin btn
+{display: block; 
+ margin: auto;   
+ width: 370px;
+ padding: 20px;
+ background-color: $color_4;
+ cursor: pointer;
+          
+}
+@mixin btn-text {
+color: $color_1;
+font-family: $font_1;
+font-weight: 900;
+text-align: center;
+text-transform: uppercase;
+}
 
+@mixin btn-hover {
+        background-color: $color_8;
+        filter: contrast(100%);
+        font-size: $fs2;
+        transition-duration: 0.3s;
+        transition-delay: 0.2s;
+           }
+
+@mixin btn-active {
+             filter: drop-shadow(0 0 3px rgba(80, 2, 2, 0.129));
+            transform: rotate(40deg);
+            transition-duration: 0.8s;
+                         }
+@mixin grid-item {
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+@mixin grid-hover {
+        background-color: $color_4;
+        opacity: 0.8;
+        border: 2px solid $color_1;
+        }
+@mixin grid-active {
+        background-color: $color_11;
+        opacity: 0.8;
+        border: 2px solid $color_1;
+}

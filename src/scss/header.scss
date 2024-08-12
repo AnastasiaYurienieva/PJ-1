@@ -91,33 +91,18 @@
     width: 1170px;
     }
       .btn-header {
-    display: block; 
-    margin: auto;   
-    width: 370px;
-    padding: 20px;
-    background-color: $color_4;
-        cursor: pointer;
-           .btn {
-            color: $color_1;
-            font-family: $font_1;
-            font-weight: 900;
-            text-align: center;
-           }
+        @include btn;
+             .btn {
+          @include btn-text;
          }
-}
+              }
+         }
 
 .btn-header:hover{
-    background-color: $color_8;
-    filter: contrast(100%);
-    font-size: $fs2;
-    transition-duration: 0.3s;
-    transition-delay: 0.2s;
-   } 
+  @include btn-hover;
+       } 
 
 .btn-header:active {
-        filter: drop-shadow(0 0 3px rgba(80, 2, 2, 0.129));
-        transform: rotate(40deg);
-        transition-duration: 0.8s;
-                     }
+  @include btn-active;}
 
                   

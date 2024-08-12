@@ -1,0 +1,81 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2px;
+}
+.grid-item {
+    padding: 20px;
+    background-color: $color_1;
+    width: 379px;
+    height: 340px;
+}
+.grid-item-1 {
+background-image:url(../img/grid.png);
+@include grid-item;
+grid-column: 1 / 2;
+grid-row: 1 / 2;
+}
+.grid-item-2 {
+    background-image: url(../img/grid-2.png);
+    @include grid-item;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.grid-item-3 {
+    background-image: url(../img/grid-3.png);
+    @include grid-item;
+    grid-column: 3/ 4;
+    grid-row: 1 / 2;
+}
+.grid-item-4 {
+    background-image: url(../img/grid-4.png);
+    @include grid-item;
+    grid-column: 4/ 5;
+    grid-row: 1 / 2;
+}
+.grid-item-5 {
+    background-image: url(../img/grid-5.png);
+    @include grid-item;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.grid-item-6 {
+    background-image: url(../img/grid-6.png);
+    @include grid-item;
+    grid-column: 2/ 3;
+    grid-row: 2 / 3;
+}
+.grid-item-7 {
+    background-image: url(../img/grid-7.png);
+    @include grid-item;
+    grid-column: 3/ 4;
+    grid-row: 2/ 3;
+}
+.grid-item-8 {
+    background-image: url(../img/grid-8.png);
+    @include grid-item;
+    grid-column: 4 / 5;
+    grid-row: 2/ 3;
+}
+.grid-3-title {
+    font-family: $font_1;
+    font-size: $fs4;
+    text-align: center;
+    font-weight: 900;
+    color: $color_1;
+}
+.grid-3-text {
+    font-family: $font_1;
+    font-weight: 400;
+    font-size: $fs5;
+    text-align: center;
+    color: $color_1;
+    }
+.grid-item:hover {
+    @include grid-hover;
+}
+
+.grid-item:active {
+    @include grid-active;
+}
