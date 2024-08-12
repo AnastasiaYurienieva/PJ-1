@@ -42,4 +42,35 @@ background-size: cover;
         background-color: $color_11;
         opacity: 0.8;
         border: 2px solid $color_1;
+        }
+@mixin h6 {
+        font-family: $font_1;
+    font-size: $fs5;
+    color: $color_1;
+    text-align: center;
+    font-weight: 700;
+}        
+
+@mixin footer-text {
+        font-family: $font_1;
+        font-weight: 400;
+        font-size: $fs5;
+        text-align: center;
+        color: $color_1;
 }
+
+@mixin icons { 
+        display: flex;
+        flex-direction: row;
+        }
+@mixin icons-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 39px;
+        height: 39px;
+        border: 1px solid $color_9;
+        }
+@mixin fa-brands {
+        color: $color_9;
+                }

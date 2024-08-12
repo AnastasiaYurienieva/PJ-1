@@ -17,16 +17,15 @@
     }
 
 
-.header-body {
-    background-image: url(../img/work_normal.png);
+.header-body { background-image: url(../img/work_normal.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.8;
-            }
+    opacity: 0.8;    
+   }
 
 .navigation-wrap {
-    padding: 20px 100px;
+    padding: 40px 120px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -71,14 +70,14 @@
 }
 
 .main-content {
-    margin-top: 100px;
-         h1 {
+    margin-top: 115px;
+          h1 {
     font: $font_1;
     font-size: $fs1;
     color: $color_1;
     text-align: center;
     width: 1170px;
-    margin: 0 auto 60px;
+    margin: 0 auto 42px;
  }
 
       .text p {
@@ -92,7 +91,7 @@
     }
       .btn-header {
         @include btn;
-             .btn {
+            .btn {
           @include btn-text;
          }
               }
@@ -105,4 +104,3 @@
 .btn-header:active {
   @include btn-active;}
 
-                  
