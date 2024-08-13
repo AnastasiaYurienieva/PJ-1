@@ -1,28 +1,12 @@
-.header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 50;
-
-        &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: $color_7;
-      }
-    }
+.header{
+  width: 100%;
+}
+.header-body { 
+  @include header-bkr;
+  position: relative;
+         }
 
 
-.header-body { background-image: url(../img/work_normal.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;    
-   }
 
 .navigation-wrap {
     padding: 40px 120px;
@@ -31,7 +15,8 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    }
+    border-bottom: 1px solid $color_6;
+        }
 
 .logo-wrap {
     display: flex;
@@ -57,7 +42,7 @@
     margin: 0 15px;
     width: 134px;
     padding: 15px 10px;
-     
+             
       .nav-link { 
         text-transform: uppercase;
     font-family: $font_1;
@@ -71,6 +56,7 @@
 
 .main-content {
     margin-top: 115px;
+    
           h1 {
     font: $font_1;
     font-size: $fs1;

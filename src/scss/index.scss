@@ -8,7 +8,7 @@
 @import "./workers.scss";
 @import "./download.scss";
 @import "./footer.scss";
-@import "./slider.scss";
+@import "./swiper.scss";
 
 html {
     font-family: "Raleway", "Cardo", sans-serif;
@@ -16,5 +16,5 @@ html {
 
 .container{
     max-width: 1510px;
-    padding: 0 15px;  
+    margin: 0 auto;
 }

@@ -59,12 +59,20 @@ grid-row: 1 / 2;
     grid-column: 4 / 5;
     grid-row: 2/ 3;
 }
-.grid-3-title {
+.text-grid-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      
+   .grid-3-title {
     font-family: $font_1;
     font-size: $fs4;
     text-align: center;
     font-weight: 900;
     color: $color_1;
+    margin-top: 120px;
+    margin-bottom: 40px;
 }
 .grid-3-text {
     font-family: $font_1;
@@ -72,7 +80,9 @@ grid-row: 1 / 2;
     font-size: $fs5;
     text-align: center;
     color: $color_1;
-    }
+    } 
+}
+
 .grid-item:hover {
     @include grid-hover;
 }
