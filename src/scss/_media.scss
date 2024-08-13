@@ -141,7 +141,7 @@ h1 {
    }
    .left-part-slider {
      .slider-title {
-        font-size: $f4;
+        font-size: $fs4;
         margin-bottom: 5px;
      }
      .slider-text {
@@ -210,5 +210,137 @@ h1 {
 }
 
 @media (max-width: 320px) {
+    .container{
+        max-width: 320px;
+    }
+    .header{
+         .header-body { background-image: color(rgb(37,43,73)), url(../img/img\ \(2\).png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 0;
+        }
+      
+        .navigation-wrap {
+            position: fixed;
+            width: 100%;
+            top: -100%;
+            left: 0;
+            z-index: 50;
+            background-color: $color_7;
+            padding: 70px 10px 20px 10px;
+            transition: 0.3s;
+        }
+        .navigation-wrap:active{
+            top: 0;
+        }
+        .navigation-wrap ::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color_7;
+            
+        }
+
+
+        .logo-wrap {
+            position: relative;
+            z-index: 51;
+            width: 130px;
+            height: 55px;
+            align-items: center;
+
+               .active-logo {
+                max-width: 100%;
+               } 
+               .box-logo {
+                max-width: 100%;
+               }
+            
+        }
+             .menu { 
+            display: none;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            transition: 0.2s;
+        }
+         .menu::before {
+            content: "";
+            background-color: $color_11;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 0;
+            z-index: 55;
+         }
+         .nav-list::after {
+            position: absolute;
+            background-color: $color_11;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            top: 9px;
+            z-index: 55;
+         }
+         .menu::after {
+            content: "";
+            background-color: $color_11;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            z-index: 55;
+         }
+        .menu:active::before{
+            transform: rotate(45deg);
+            top: 9px;
+        }
+        .menu:active::after{
+            transform: rotate(45deg);
+            bottom: 9px;
+        }
+
+        .nav-list:active::after{
+           transform: scale(0);
+        }
+
+          .nav-list {
+            display: block;
+            transition: 0.2s;
+                    }
+
+        .nav-list-item {
+            margin: 0 0 20px 0;
+        }
+        .nav-link {
+            
+        }
+        .main-content {
+            padding: 60px 0 0 0;
+         h1 {
+            font-size: $fs2;
+            width: 280px;
+         }
+        .text {
+            width: 280px;
+            p {
+          font-size: $fs8;       
+            }
+                   }
+        .btn-header {
+            width: 280px;
+        }
+        .btn {
+            font-size: $fs4;
+        }
+    }
+
+        
+    }
 
 }

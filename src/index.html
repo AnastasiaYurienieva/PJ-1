@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./scss/index.scss">
     <title>Document</title>
 </head>
@@ -13,8 +17,8 @@
             <div class="navigation-wrap">
             <div class="logo-wrap">
                 <a class="logo" href="#">
-                    <img src="./img/ACTIVEBOX1.png" alt="#">
-                    <img src="./img/ACTIVEBOX.png" alt="#">
+                    <img class="active-logo" src="./img/ACTIVEBOX1.png" alt="#">
+                    <img class="box-logo" src="./img/ACTIVEBOX.png" alt="#">
                 </a>
                 </div>
                 <nav class="menu">
@@ -58,6 +62,7 @@ vel scelerisque nisl consectetur et.
     <section class="inform">
         <div class="container">
             <div class="wrap-inform">
+            <div class="first-three">
             <div class="card-wrap-inform">
                 <div class="card-img-inform">
                         <img src="./img/icon_1.png" alt="#"> 
@@ -91,6 +96,8 @@ vel scelerisque nisl consectetur et.
                                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="second-three">
                         <div class="card-wrap-inform">
                             <div class="card-img-inform">
                                     <img src="./img/icon_4.png" alt="#"> 
@@ -125,11 +132,11 @@ vel scelerisque nisl consectetur et.
                                         </div>
                                     </div>
                                 </div>
+                                </div>
             </div>
         </div>
 
     </section>
-    
     <section class="pj-name">
         <div class="container">
             <div class="grid">
@@ -140,8 +147,10 @@ vel scelerisque nisl consectetur et.
                 <a class="grid" href="#"></a>
             </div>
             <div class="grid-item grid-item-3"> 
+            <div class="text-grid-wrap">
             <a class="grid-3-title" href="#">Project Name</a>
             <a class="grid-3-text" href="#">User Interface Design</a></div>
+            </div>
             <div class="grid-item grid-item-4">
                 <a class="grid" href="#"></a>
             </div>
@@ -161,7 +170,6 @@ vel scelerisque nisl consectetur et.
         </div>
 
     </section>
-
     <section class="workers">
         <div class="container">
           <div class="workers-wrap">
@@ -221,7 +229,7 @@ vel scelerisque nisl consectetur et.
            </div>
            <div class="workers-wrap-card">
             <div class="img-workers">
-                <img src="./img/Rectangle 24 (1).png" alt="#"></div>
+                <img src="./img/Rectangle 24.png" alt="#"></div>
                 <h4 class="worker">
                     Victoria Vladez 
                 </h4>
@@ -275,7 +283,90 @@ vel scelerisque nisl consectetur et.
         </div>
     </section>
     <section class="slider">
-
+        <div class="container">
+        <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <div class="img-slider-wrapper">
+                <img class="img-slider" src="./img/slider4.png" alt="#"></div>
+                <div class="left-part-slider">
+                <h2 class="slider-title">
+                    “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                </h2>
+                <div class="slider-text">
+                    <p>
+                        Susan Sims, Interaction Designer at XYZ
+                    </p>
+                </div>
+            </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-slider-wrapper">
+                <img class="img-slider" src="./img/slider2.png" alt="#"></div>
+                <div class="left-part-slider">
+                    <h2 class="slider-title">
+                        “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                    </h2>
+                    <div class="slider-text">
+                        <p>
+                            Susan Sims, Interaction Designer at XYZ
+                        </p>
+                    </div>
+                </div> 
+            </div>
+              <div class="swiper-slide">
+                <div class="img-slider-wrapper">
+                <img class="img-slider" src="./img/slider3.png" alt="#"></div>
+                <div class="left-part-slider">
+                    <h2 class="slider-title">
+                        “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                    </h2>
+                    <div class="slider-text">
+                        <p>
+                            Susan Sims, Interaction Designer at XYZ
+                        </p>
+                    </div>
+                </div>  
+            </div>
+              <div class="swiper-slide">
+                <div class="img-slider-wrapper">
+                <img class="img-slider" src="./img/slider1.png" alt="#"></div>
+                <div class="left-part-slider">
+                    <h2 class="slider-title">
+                        “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                    </h2>
+                    <div class="slider-text">
+                        <p>
+                            Susan Sims, Interaction Designer at XYZ
+                        </p>
+                    </div>
+                </div> 
+            </div>
+              <div class="swiper-slide">
+                <div class="img-slider-wrapper">
+                <img class="img-slider" src="./img/slider5.png" alt="#"></div>
+                <div class="left-part-slider">
+                    <h2 class="slider-title">
+                        “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                    </h2>
+                    <div class="slider-text">
+                        <p>
+                            Susan Sims, Interaction Designer at XYZ
+                        </p>
+                    </div>
+                </div>  
+            </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagnition-bullet">
+              <span class="swiper-pagination"></span>
+              <span class="swiper-pagination"></span>
+              <span class="swiper-pagination"></span>
+              <span class="swiper-pagination"></span>
+              <span class="swiper-pagination"></span>
+              </div>
+        </div>
     </section>
     <section class="download">
         <div class="container">
@@ -294,8 +385,54 @@ vel scelerisque nisl consectetur et.
     </div>
     </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="wrap-footer">
+                <div class="footer-section">
+                <div class="left">
+<h6 class="location">Location</h6>
+<div class="text-location">
+    <p> 3481 Melrose Place Beverly Hills, CA 90210 </p>
+</div>
+                </div>
+                <div class="center">
+                    <h6 class="center">Share with Love</h6>
+                    <ul class="center-icons">
+                        <li class="center-icons-item">
+                            <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li class="center-icons-item">
+                            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li class="center-icons-item">
+                            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                     </ul>
 
+                </div>
+                <div class="right">
+                    <h6 class="right-title">About ActiveBox</h6>
+                    <div class="right-text">
+                        <p>
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="text-copyright">
+                    <p>
+                        Copyright © 2015 ActiveBox. All Rights Reserved
+Made with <span>by Kamal Chaneman</span>
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
     <script type="module" src="./js/index.js"></script>
 </body>
 </html>
