@@ -1,15 +1,16 @@
 .wrap-footer {
     background-color: $color_12;
-    padding: 50px 0 0 0;
+    padding: 60px 0 0 0;
     
 }
 .footer-section {
+    padding: 0 170px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-bottom: 30px;
-}
+    }
 .left {
     width: 370px;
     display: flex;
@@ -56,7 +57,7 @@
 }
 .footer-copyright {
     background-color: $color_13;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .text-copyright {

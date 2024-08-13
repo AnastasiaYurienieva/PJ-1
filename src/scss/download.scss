@@ -1,5 +1,5 @@
 .download {
-    padding: 100px 130px;
+    padding: 65px 170px;
 }
 .download-wrap{
     width: 1170px;
@@ -21,7 +21,7 @@
 }
 .btn-download {
     @include btn;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     .btn-link {
         @include btn-text;
     }
