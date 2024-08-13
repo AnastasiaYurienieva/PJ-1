@@ -10,7 +10,7 @@
     width: 379px;
     height: 340px;
     cursor: pointer;
-}
+    }
 .grid-item-1 {
 background-image:url(../img/grid.png);
 @include grid-item;
@@ -84,9 +84,10 @@ grid-row: 1 / 2;
 }
 
 .grid-item:hover {
-    @include grid-hover;
-}
+   @include grid-hover;
+      }
 
 .grid-item:active {
     @include grid-active;
+   
 }
