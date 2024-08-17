@@ -33,14 +33,12 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 }
-@mixin grid-hover {
-        background-color: $color_4;
-        opacity: 0.8;
+@mixin grid-hover { 
+        background:rgba(255, 67, 67, 0.5);
         border: 2px solid $color_1;
                 }
 @mixin grid-active {
-        background-color: $color_11;
-        opacity: 0.8;
+        background: rgba(185, 12, 12, 0.8);
         border: 2px solid $color_1;
                 }
 @mixin h6 {

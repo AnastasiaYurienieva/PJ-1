@@ -1,18 +1,20 @@
-.grid {
+.grid-parent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 2px;
-}
+    }
+
 .grid-item {
     padding: 20px;
     background-color: $color_1;
     width: 379px;
     height: 340px;
     cursor: pointer;
-    }
+            }
+
 .grid-item-1 {
-background-image:url(../img/grid.png);
+background-image: url(../img/grid.png);
 @include grid-item;
 grid-column: 1 / 2;
 grid-row: 1 / 2;
@@ -82,12 +84,29 @@ grid-row: 1 / 2;
     color: $color_1;
     } 
 }
+.grid-item {
+    position: relative;
+}
+.grid-item::after {
+    content: ' ';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    @include grid-hover;
+    display: none;
+}
+.grid-item:hover::after {
+    display: block;       
+}
 
-.grid-item:hover {
-   @include grid-hover;
-      }
-
-.grid-item:active {
+.grid-item::before {
+    content: ' ';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
     @include grid-active;
+    display: none;
+}
+
+.grid-item:active::before {
+    display: block;
    
 }
